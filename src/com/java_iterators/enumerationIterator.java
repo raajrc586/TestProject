@@ -2,6 +2,7 @@ package com.java_iterators;
 import java.util.Enumeration; 
 import java.util.Vector; 
   
+//Java program to demonstrate Enumeration 
 public class enumerationIterator 
 { 
     public static void main(String[] args) 
