@@ -1,20 +1,25 @@
-package com.CollectionFromIterator;
+package com.CollectionFromIterable;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Iterator;
 
-public class CollectionFromItrForEachLoop {
-	 public static <T> Collection<T>  
-     getCollectionFromIteralbe(Iterable<T> itr) 
+public class CollectionFromItrUsingIteator {
+	public static <T> Collection<T>  
+    getCollectionFromIteralbe(Iterable<T> itr) 
 { 
 // Create an empty Collection to hold the result 
 Collection<T> cltn = new ArrayList<T>(); 
 
-// Use iterable.forEach() to 
-// Iterate through the iterable and 
-// add each element into the collection 
-itr.forEach(cltn::add); 
+// Get the iterator at the iterable 
+Iterator<T> iterator = itr.iterator(); 
+
+// Iterate through the iterable using 
+// iterator to add each element into the collection 
+while (iterator.hasNext()) { 
+cltn.add(iterator.next()); 
+} 
 
 // Return the converted collection 
 return cltn; 

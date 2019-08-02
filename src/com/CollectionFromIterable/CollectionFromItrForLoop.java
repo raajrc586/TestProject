@@ -1,4 +1,4 @@
-package com.CollectionFromIterator;
+package com.CollectionFromIterable;
 
 import java.util.ArrayList;
 import java.util.Arrays;
