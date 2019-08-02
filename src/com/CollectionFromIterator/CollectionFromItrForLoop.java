@@ -6,7 +6,7 @@ import java.util.Collection;
 import java.util.Iterator;
 
 //Using For Loop
-public class CollectionFromItr {
+public class CollectionFromItrForLoop {
 	
 	public static Collection<Integer> getCollectionFromIterator(Iterable<Integer> itr){
 		Collection<Integer> coll = new ArrayList<Integer>();
